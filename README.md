@@ -12,3 +12,7 @@ Desc: Monitors temperature and humidity and displays it I also added a warning l
 04 motion activated LED
 desc:Motion-Activated Light
 An Arduino project that uses a PIR motion sensor to detect movement and automatically control an LED.
+
+05 lcd environment monitor
+
+06 potentiometer servo control
