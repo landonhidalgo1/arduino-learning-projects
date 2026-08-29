@@ -8,3 +8,7 @@ Description: LED turns on when light turns off and then turns off when light is 
 
 03- Temperature and Humidity Monitor
 Desc: Monitors temperature and humidity and displays it I also added a warning light if temp gets to high
+
+04 motion activated LED
+desc:Motion-Activated Light
+An Arduino project that uses a PIR motion sensor to detect movement and automatically control an LED.
