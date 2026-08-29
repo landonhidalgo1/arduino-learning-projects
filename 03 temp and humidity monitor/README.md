@@ -25,3 +25,23 @@ If the temperature reaches 23 C or higher, the arduino sends a HIGH signal to th
 -sensor error detection
 -Serial monitor output
 -Updates every 2 seconds
+
+## WIRING
+
+### DHT11 Temperature & Humidity Sensor
+Signal (S) > Arduino Digital Pin 13
+Positive (+) > Arduino 5V
+Negative (-) > Arduino GND
+
+### LED
+Arduino Digital Pin 2 > LED long leg (anode/+)
+LED Short leg (Cathode/-) > resistor
+Other side of resistor > Arduino GND
+
+## Circuit Behavior
+
+The DHT11 continuously provides temp and humidity readings to the Arduino through digital pin 13.
+
+The Arduino compares the measured temps to a threshold of 23C
+
+If the DHT11 returns an invalid reading, the program detects the error using 'isnan()' and skips that reading.
