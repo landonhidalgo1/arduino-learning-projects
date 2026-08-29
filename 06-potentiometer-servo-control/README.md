@@ -1,7 +1,7 @@
-Potentiometer-Controlled Servo Motor
+# Potentiometer-Controlled Servo Motor
 An Arduino project that uses a potentiometer to control the position of a servo motor in real time. The Arduino reads the analog input from the potentiometer, converts the reading into an angle, and commands the servo to move to that position.
 
-Project Demo
+## Project Demo
 ![Potentiometer Controlled Servo](potentiometer-servo.jpg)
 
 Components
@@ -12,7 +12,7 @@ Breadboard
 Jumper Wires
 USB Cable
 
-How It Works
+## How It Works
 The potentiometer produces an analog value between approximately 0 and 1023 depending on the position of the knob.
 
 The Arduino reads this value using analogRead().
@@ -23,20 +23,20 @@ The converted angle is then sent to the servo using myServo.write().
 
 The Serial Monitor also displays both the raw potentiometer reading and the calculated servo angle for debugging and monitoring.
 
-Wiring
+## Wiring
 Servo Motor
 Brown/Black → GND
 Red → 5V
 Orange/Yellow Signal → Digital Pin 2
 
-Potentiometer
+## Potentiometer
 Outer Leg → 5V
 Middle Leg → A0
 Other Outer Leg → GND
 ``
 ## What I Learned
 
-Through this project, I learned how to:
+### Through this project, I learned how to:
 
 - Control a servo motor with an Arduino
 - Read analog input using analogRead()
